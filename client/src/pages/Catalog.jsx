@@ -153,9 +153,12 @@ const Catalog = () => {
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__content">
                             {/* <Button size="sm" onClick={clearFilter}>Xoá bộ lọc</Button> */}
-                            <button onClick={clearFilter}>Xoá bộ lọc</button>
+                            <Button onClick={clearFilter}>Xoá bộ lọc</Button>
                         </div>
                     </div>
+                </div>
+                <div className="catalog__filter__toggle">
+                    <Button size="sm" onClick={() => showHideFilter()}>Bộ lọc</Button>
                 </div>
                 <div className="catalog__content">
                     <Grid
