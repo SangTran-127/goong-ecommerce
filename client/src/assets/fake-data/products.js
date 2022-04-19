@@ -228,9 +228,12 @@ const getProducts = (count) => {
   return products.slice(start, start + count);
 };
 
+const getProductBySlug = (slug) => products.find((p) => p.slug === slug);
+
 const productData = {
   getAllProducts,
   getProducts,
+  getProductBySlug,
 };
 
 export default productData;
