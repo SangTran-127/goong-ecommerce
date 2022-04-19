@@ -1,0 +1,14 @@
+.product {
+    @include flex(flex-start, flex-start);
+    &__images {
+        @include flex(flex-start, flex-start);
+        flex-wrap: wrap;
+        width: 60%;
+        &__list {
+            width: 20%;
+            &__item {
+                cursor: pointer;
+            }
+        }
+    }
+}
